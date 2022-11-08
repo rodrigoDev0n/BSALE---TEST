@@ -1,0 +1,101 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    width: 100%;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(138,138,138,1);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(138,138,138,1);
+    box-shadow: 1px 1px 5px 0px rgba(138,138,138,1);
+}
+
+.logo-container {
+    align-items: center;
+    background-image: url('./assets/bsalelogo.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}
+
+.cart-container {
+    align-items: center;
+    border: 1px rgba(105, 101, 101, 0.456);
+    display: flex;
+    justify-content: space-evenly;
+    width: 100px;
+}
+
+.cart-container p {
+    font-weight: bold;
+}
+
+.cart-container:hover {
+    cursor: pointer;
+    color: rgb(217, 85, 3);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.products-container {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    height: 10%;
+    justify-content: center;
+    padding: 10px;
+    width: 60%;
+}
+
+.card-product {
+    align-items: center;
+    border: 1px solid rgba(138, 138, 138, 0.134);
+    display: flex;
+    height: 400px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 300px;
+    -webkit-box-shadow: -9px 15px 11px -10px rgba(138,138,138,1);
+    -moz-box-shadow: -9px 15px 11px -10px rgba(138,138,138,1);
+    box-shadow: -9px 15px 11px -10px rgba(138,138,138,1);
+}
+
+.card-product section {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-header {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    width: 100%;
+}
+
+.card-header img {
+    height: 200px;
+    width: 200px;
+}
+
+.card-product-info {
+    height: 50px;
+    width: 100%;
+}
+
+
+
