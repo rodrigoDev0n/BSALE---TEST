@@ -19,29 +19,23 @@
         <div class="logo-container">
             <!-- Contiene el logo de la aplicación -->
         </div>
-        <div class="cart-container">
+        <div class="cart-container" id="cart">
             <!-- Contiene el carrito de la aplicación -->
             <p>Mi carrito</p>
             <i class="fa-solid fa-cart-shopping"></i>
+            <p id="cartCounter"></p>
         </div>
     </header>
     <main>
-        <div class="products-container">
-            <div class="card-product">
-                <header class="card-header">
-                    <!-- Contiene la imagen de un producto -->
-                    <img src="https://mercadorapid.cl/wp-content/uploads/2020/07/coca-1.5.png" alt="">
-                </header>
-                <div class="card-product-info">
-                    <!-- Contiene la información del producto -->
-                    <section>
-                        <h3>Bebida COCA-COLA</h3>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </section>
-                </div>
-            </div>
+        <div class="category-container">
+            <select name="" id="categorias">
+                <option value="">Selecciona una categoria</option>
+            </select>
+        </div>
+        <div class="products-container" id="product">
+            <!-- Contiene los productos -->
         </div>
     </main>
-    <script src="./index.js"></script>
+    <script type="module" src="./src/index.js"></script>
 </body>
 </html>
