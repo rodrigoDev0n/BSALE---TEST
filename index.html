@@ -28,9 +28,24 @@
     </header>
     <main>
         <div class="category-container">
-            <select name="" id="categorias">
-                <option value="">Selecciona una categoria</option>
-            </select>
+            <form action="">
+                <input type="text" name="" id="searchbar" placeholder="Busca un producto">
+                <button id="searchButton" class="search-btn">Buscar</button>
+            </form>
+            <div class="pagination-button-container">
+                <div>
+                    <button id="prev">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        Anterior
+                    </button>
+                </div>
+                <div>
+                    <button id="next">
+                        Siguiente 
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
         </div>
         <div class="products-container" id="product">
             <!-- Contiene los productos -->

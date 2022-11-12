@@ -1,4 +1,4 @@
-import { dataResult } from "./helpers/getApiData.js";
+/* import { dataResult } from "./helpers/getApiData.js";
 import { productCard } from "./productCard.js";
 import { dataResult } from "./helpers/getApiData.js";
 
@@ -20,7 +20,7 @@ myCart.addEventListener('click', () => {
   cart.map((name, url_image, price, id) => {
     productCard(name, url_image, price, id);
   });
-});
+}); */
 
 
 

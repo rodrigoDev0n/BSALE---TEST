@@ -1,6 +1,3 @@
-import { dataResult } from './helpers/getApiData.js';
-import { addFunction } from './addCart.js';
-
 const container = document.getElementById('product');
 
 export const productCard = (name, img, price, id) => {
@@ -18,7 +15,7 @@ export const productCard = (name, img, price, id) => {
     productCard.className = 'card-product';
     productHeader.className = 'card-header';
     productInfo.className = 'card-product-info';
-    productIcon.className = 'fa-solid fa-cart-shopping'
+    productIcon.className = 'fa-solid fa-cart-plus';
     productPriceContainer.className = 'product-price-container';
 
     //ids:
@@ -42,6 +39,6 @@ export const productCard = (name, img, price, id) => {
     container.appendChild(productCard);
 }
 
-export const loadProductCard = () => {
-    dataResult.map(({name, url_image, price, id}) => productCard(name, url_image, price, id));
-}
+
+
+

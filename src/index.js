@@ -1,11 +1,9 @@
-import { loadProductCard } from "./productCard.js";
+import { loadProductCard } from './pagination.js';
+import { categories } from './helpers/getCategoriesData.js';
+import { onSearch } from './searchProduct.js';
 
-const categories = document.getElementById('categorias');
+const categorias = document.getElementById('categorias');
 
 loadProductCard();
 
-
-
-
-
-
+const btn = document.getElementById('searchButton');
