@@ -1,5 +1,4 @@
 import { productCard } from "./productCard.js";
-import { data } from "./helpers/getApiData.js";
 
 export const container = document.getElementById('product');
 const prev = document.getElementById('prev');
@@ -7,7 +6,7 @@ const next = document.getElementById('next');
 
 let page = 0;
 
-export const loadProductCard = () => {
+export const loadProductCard = (data) => {
     for (let i = 0; i < page + 6; i++) {
         const { name, url_image, price, id } = data[i];
         productCard(name, url_image, price, id);
@@ -42,6 +41,6 @@ const prevPageCards = () => {
     }
 }
 
-next.addEventListener('click', nextPageCards);
-prev.addEventListener('click', prevPageCards);
+next.addEventListener('click', nextPageCards());
+prev.addEventListener('click', prevPageCards());
 
